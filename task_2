@@ -1,0 +1,19 @@
+n=3
+d=0
+A=[]
+print('введите список')
+for i in range (n):
+    A.append(list(map(float,input() .split())))
+c=A[0][0]+A[0][1]+A[0][2]
+for i in range (n):
+    if (A[i][0]+A[i][1]+A[i][2])==c:
+        d+=1 
+for j in range (n):
+    if (A[0][j]+A[1][j]+A[2][j])==c:
+        d+=1 
+if (A[0][0]+A[1][1]+A[2][2])==c and (A[0][2]+A[1][1]+A[2][0])==c:
+    d+=1
+if d==7:
+    print('список является магическим квадратом Ло Шу')
+else:
+    print('список не является магическим квадратом Ло Шу')

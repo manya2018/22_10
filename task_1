@@ -1,0 +1,9 @@
+def chisla(A,n):
+    B=[]
+    for i in range (len(A)):
+        if A[i]>n:
+            B.append(A[i])
+    return(B)
+A=[int(n) for n in input().split()]
+n=float(input('введите число'))
+print(chisla(A,n))

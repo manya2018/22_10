@@ -1,0 +1,16 @@
+s1 = ['a', 'о', 'у', 'ы', 'э', 'я', 'ё', 'ю', 'и', 'е']
+def gl(s):
+  k = 0
+  for el in s:
+    if el in s1:
+      k += 1
+  return k
+def sogl(s): 
+  k = 0
+  for el in s:
+    if el not in s1:
+      k += 1
+  return k
+s = input().lower()
+print(gl(s)) 
+print(sogl(s)) 
